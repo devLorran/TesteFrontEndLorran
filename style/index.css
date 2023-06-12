@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*MENU HAMBURGER */
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 25px 25px;
+    transition: 0.3s;
+    z-index: 100000;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 777;
+    transition: 0.5s;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    color: #888888;
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    box-shadow: 0 -5px 0px #888888 inset,
+    500px 0 0 rgba(255, 255, 255, 0.03) inset;
+    padding: 35px 25px 45px 25px;
+}
+
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 888;
+    transition: 0.3s;
+}
+
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #ffffff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger:before{
+    top: -10px;
+    width: 20px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 25px;
+}
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger,
+.toggle-menu{
+    display: none;
+}
+
+.navigation input:checked ~ .hamburger{
+    background: transparent;
+}
+
+.navigation input:checked ~ .hamburger:before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .hamburger:after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+/*FIM MENU HAMBURGER */
+
+/*CAROUSEL*/
+
+.mySlides{
+    display: none;
+}
+
+img{
+    vertical-align: middle; /* centraliza a imagem */
+}
+
+.slideshow-container{
+    max-width: 80%;
+    top: 140px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text{
+    color: #ffffff7d;
+    font-size: 55px;
+    padding: 24px 12px;
+    position: absolute;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    bottom: 305px;
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    /* background-color: #717171; */
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from { opacity: .4}
+    to { opacity: 1}
+}
+
+/*FIM CAROUSEL*/
+
+
+
+/* CSS que faz o menu hamburger aparecer */
+.navigation input:checked ~ .menu{
+    left: 0;
+    box-shadow: rgba(255, 255, 255, 0.03);
+}
+/* fim CSS que faz o menu hamburger aparecer */
+body{
+    background: #ffffff;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(1){
+    color: #2554ff;
+}
+section:nth-child(2){
+    color: #ffffff;
+    height: 120vh;
+    background: #f5ff3b;
+}
+section:nth-child(3){
+    color: #fff;
+    background: #2554ff;
+}
+section:nth-child(4){
+    color: #1D212B;
+    background: #ffffff;
+}
+section .container{
+    margin: 100px;
+}
+section h1{
+    font-size: 60px;
+}
+section h3{
+    font-size: 90px;
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .cards{
+    display: flex;
+}
+section .cards .text-card{
+    background: #2696E9;
+    margin: 20px;
+    padding: 20px;
+}
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+@media (max-width: 992px){
+    section h1{
+        font-size: 40px;
+    }
+
+    section .cards{
+        flex-direction: column;
+    }
+    .hamburger,
+    .toggle-menu{
+        display: block;
+    }
+    /* CSS que faz o menu hamburger esconder */
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        background: rgb(0 0 0 / 60%);
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+    }
+    /* fim CSS que faz o menu hamburger esconder */
+    .menu li{
+        width: 100%;
+    }
+
+    .menu li a,
+    .menu li a:hover{
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.01) inset;
+    }
+    .text {
+        color: #ffffff7d;
+        font-size: 20px;
+        padding: 24px 12px;
+        position: absolute;
+        width: 100%;
+        font-weight: bolder;
+        text-align: center;
+        bottom: 64px;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(-100px);
+    opacity: 1;
+}
+@media only screen and(max-width: 300px){
+    .prev, .next, .text{
+        font-size: 11px;
+    }
+
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
+    .text {
+        font-size: 28px;
+        bottom: 48px;
+    }
+}
+
+@media only screen and(max-width: 500px){
+    .prev, .next, .text{
+        font-size: 14px;
+    }
+    .text {
+        font-size: 28px;
+        bottom: 48px;
+    }
+}
+
+
+
+

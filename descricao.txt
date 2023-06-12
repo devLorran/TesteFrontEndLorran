@@ -1,0 +1,20 @@
+Realizei o projeto com base nos meus conheicmentos com HTML CSS e JavaScript
+HTML para o esqueleto do site CSS para o design e animações e JavaScript para o parte lógica
+
+
+1 passo foi criar o menu que principal que interligam as âncoras na página conforme foi pedido,
+cada menu corresponde a uma página que quando o usuário
+clica no botão ela vai automaticamente para o conteúdo que corresponde ao botão clicado pelo usuário
+
+2 slide show com autoplay responsivo que se adapta a qualquer dispositivo
+utlizei um exemplo que achei no Youtube com botões e animações via JavaScript
+https://www.youtube.com/watch?v=DpHi9Ruu8R4&ab_channel=CodingWithNick
+
+3 paleta de cores que coloquei em cada section cada um com uma cor diferente azul, amarelo, a branco
+
+4 responsividade criei media querys para adaptar o menu e as fontes em cada tela
+o menu se transforma em um menu hamburger animado com deslize quando o usuário clica nele
+esse mesmo estilo de menu HAMBURGER utilizei em um projeto quandop eu era estagiário Desenvolvedor Front end
+quando pediram pra eu incluir um menu responsivo em um site de serviço de táxis
+
+5 coloquei uma animação scrolling que carrega o conteudo da página quando o usuário desce o scroll utilizando JavaScript e CSS

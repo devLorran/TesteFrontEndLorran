@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Teste Lorran - Site One Page</title>
+</head>
+<body>
+        <!-- Menu principal -->
+        <header class="header">
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu">
+                <div class="hamburger"></div>
+                <ul class="menu">
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#produtos">Produtos</a> </li>
+                    <li> <a href="#contato">Contato</a> </li>
+                </ul>
+            </div>
+        </header>
+    <section id="home">
+        <div class="container">
+            <h1>Novidades</h1>
+            <div class="cards">
+            <!-- CAROUSEL-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/imagem1.jpg" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/imagem2.jpg" style="width: 100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/imagem3.jpg" style="width: 100%;">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlides(1)"></span>
+                    <span class="dot" onclick="currentSlides(2)"></span>
+                    <span class="dot" onclick="currentSlides(3)"></span>
+                </div>
+            </div>
+        
+        <!-- FIM CAROUSEL -->
+            </div>
+        </div>
+
+    </section>
+
+    <section id="produtos">
+        <div class="container reveal">
+            <h1>Nossos Produtos</h1>
+            <div class="cards">
+                <div class="text-card">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus voluptates natus explicabo corrupti sequi impedit adipisci fuga, sed ipsam vel. Facilis accusantium, id iste voluptate nostrum ipsum praesentium ut.</p>
+                </div>
+                <div class="text-card">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus voluptates natus explicabo corrupti sequi impedit adipisci fuga, sed ipsam vel. Facilis accusantium, id iste voluptate nostrum ipsum praesentium ut.</p>
+                </div>
+                <div class="text-card">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus voluptates natus explicabo corrupti sequi impedit adipisci fuga, sed ipsam vel. Facilis accusantium, id iste voluptate nostrum ipsum praesentium ut.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contato">
+        <div class="container reveal">
+            <h1>Entre em contato conosco</h1>
+            <div class="cards">
+                <div class="text-card">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus voluptates natus explicabo corrupti sequi impedit adipisci fuga, sed ipsam vel. Facilis accusantium, id iste voluptate nostrum ipsum praesentium ut.</p>
+                </div>
+                <div class="text-card">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus voluptates natus explicabo corrupti sequi impedit adipisci fuga, sed ipsam vel. Facilis accusantium, id iste voluptate nostrum ipsum praesentium ut.</p>
+                </div>
+                <div class="text-card">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus voluptates natus explicabo corrupti sequi impedit adipisci fuga, sed ipsam vel. Facilis accusantium, id iste voluptate nostrum ipsum praesentium ut.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
